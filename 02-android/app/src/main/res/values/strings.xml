@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Gr1acccac2023b</string>
+    <string name="app_name" translatable="false">Gr1acccac2023b</string>
+    <string name="texto_saludo" translatable="false">Saludo en español</string>
+    <color name="color_bg">#FFFFFFFF</color>
+    <color name="color_text">#973434</color>
 </resources>
