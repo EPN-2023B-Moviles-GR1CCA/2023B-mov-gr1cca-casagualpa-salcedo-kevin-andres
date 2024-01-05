@@ -1,0 +1,2 @@
+{"id":1,"nombre":"Andres","numeroContrato":1,"salario":1234.0,"creacion":"Jan 1, 2021, 12:10:00 AM","empleadoActivo":true,"ingredientes":["viajes cooporativos","administracion de servicios"],"cargo":"cargo"}
+{"id":3,"nombre":"Pedro Luna","numeroContrato":12,"salario":542.12,"creacion":"Jan 12, 2020, 12:12:00 AM","empleadoActivo":true,"ingredientes":["transportista","entregas"],"cargo":"empleado"}

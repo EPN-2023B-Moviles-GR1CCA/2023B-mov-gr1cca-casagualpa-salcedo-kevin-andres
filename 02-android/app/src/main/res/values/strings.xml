@@ -3,4 +3,10 @@
     <string name="texto_saludo" translatable="false">Saludo en español</string>
     <color name="color_bg">#FFFFFFFF</color>
     <color name="color_text">#973434</color>
+
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
 </resources>
