@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Examren-IB</string>
+    <string name="title_activity_departamento_creacion">Departamento_creacion</string>
+
+    <string-array name="DepartamentoActivo">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+</resources>
