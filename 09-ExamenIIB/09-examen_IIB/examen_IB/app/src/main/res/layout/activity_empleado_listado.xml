@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_comidas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Empleado_Listado">
+
+    <ListView
+        android:id="@+id/lv_listados_comidas"
+        android:layout_width="342dp"
+        android:layout_height="398dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_comida" />
+
+    <TextView
+        android:id="@+id/txt_titulo_listado_cocineros"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:text="Listado de Empleados"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/titulo_lista_cocineros"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_titulo_nombre_cocinero"
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/titulo_lista_cocineros"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_listado_cocineros"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_listado_cocineros" />
+
+    <Button
+        android:id="@+id/btn_crear_comida"
+        android:layout_width="121dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:text="Crear Empleado"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color_btn_crear_cocinero"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nombre_cocinero" />
+</androidx.constraintlayout.widget.ConstraintLayout>

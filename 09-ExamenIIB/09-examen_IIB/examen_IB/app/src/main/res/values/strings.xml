@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">examen_IB</string>
+
+    <string name="titulo_lista_cocineros">Cocineros</string>
+    <string name="btn_crear_cocinero">Crear</string>
+    <dimen name="lv_width">355dp</dimen>
+    <dimen name="lv_height">445dp</dimen>
+    <string name="lbl_titulo_creacion_cocinero">Ingresa los datos del cocinero</string>
+    <string name="lbl_datos_personales">Datos personales</string>
+    <string name="lbl_codigo_unico">Código único</string>
+    <string name="lbl_nombre">Nombres</string>
+    <string name="lbl_apellido">Apellidos</string>
+    <string name="lbl_edad">Edad</string>
+    <string name="lbl_datos_contratacion">Datos de contratación</string>
+    <string name="lbl_fecha_contratacion">Fecha de contratación</string>
+    <string name="lbl_salario">Salario</string>
+    <string name="lbl_chef_principal">¿Es chef principal?</string>
+    <string name="hint_codigoUnico">Ej. "COC-01"</string>
+    <string name="hint_nombre">Ej. "Juan Diego"</string>
+    <string name="hint_apellido">Ej. "Torres Cuenca"</string>
+    <string name="hint_edad">Ej. "24"</string>
+    <string name="hint_fecha"> yyyy-MM-dd Ej. "2024-01-07"</string>
+    <string name="hint_salario">Ej. "2050.00"</string>
+
+    <dimen name="txt_width">220dp</dimen>
+    <dimen name="txt_height">48dp</dimen>
+    <dimen name="lbl_width">100dp</dimen>
+    <dimen name="lbl_height">16dp</dimen>
+
+    <string-array name="items_chef_principal">
+        <item>--Seleccionar--</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="items_tipo_cocina">
+        <item>--Seleccionar--</item>
+        <item>Ecuatoriana</item>
+        <item>Colombiana</item>
+        <item>Mexicana</item>
+        <item>Chilena</item>
+        <item>Argentina</item>
+        <item>Boliviana</item>
+        <item>Venezolana</item>
+        <item>Cubana</item>
+        <item>Francesa</item>
+        <item>Italiana</item>
+        <item>Rusa</item>
+        <item>Coreana</item>
+    </string-array>
+</resources>
