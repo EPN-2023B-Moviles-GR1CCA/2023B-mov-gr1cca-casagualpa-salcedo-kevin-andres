@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_creacion_cocinero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    app:layout_scrollEffect="none"
+    tools:context=".Departamento_creacion">
+
+  <TextView
+      android:id="@+id/lbl_titulo_creacion_cocinero"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@color/texts_inputs_cocineros"
+      android:text="Ingresa los datos del Departamento"
+      android:textAlignment="center"
+      android:textColor="@color/titulo_lista_cocineros"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/lbl_datos_personales"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Datos principales"
+      android:textAllCaps="false"
+      android:textColor="#245359"
+      android:textSize="16sp"
+      android:textStyle="bold|italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.152"
+      app:layout_constraintStart_toStartOf="@+id/lbl_titulo_creacion_cocinero"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_titulo_creacion_cocinero" />
+
+  <TextView
+      android:id="@+id/lbl_codigo"
+      android:layout_width="103dp"
+      android:layout_height="16dp"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="16dp"
+      android:text="@string/lbl_codigo_unico"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/lbl_datos_personales"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_datos_personales" />
+
+  <TextView
+      android:id="@+id/lbl_nombre"
+      android:layout_width="@dimen/lbl_width"
+      android:layout_height="@dimen/lbl_height"
+      android:layout_marginTop="16dp"
+      android:text="Nombre"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/txt_codigoUnico"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txt_codigoUnico"
+      app:layout_constraintTop_toBottomOf="@+id/txt_codigoUnico" />
+
+  <TextView
+      android:id="@+id/lbl_apellido"
+      android:layout_width="@dimen/lbl_width"
+      android:layout_height="@dimen/lbl_height"
+      android:layout_marginTop="16dp"
+      android:text="Área"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/txt_nombre"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txt_nombre"
+      app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+  <TextView
+      android:id="@+id/lbl_edad"
+      android:layout_width="140dp"
+      android:layout_height="24dp"
+      android:layout_marginTop="12dp"
+      android:text="Cantidad de Empleados"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/txt_apellido"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txt_apellido"
+      app:layout_constraintTop_toBottomOf="@+id/txt_apellido" />
+
+  <TextView
+      android:id="@+id/lbl_datos_contratacion"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="328dp"
+      android:text="Datos del Departamento"
+      android:textColor="#245359"
+      android:textSize="16sp"
+      android:textStyle="bold|italic"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_datos_personales"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_datos_personales"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_datos_personales" />
+
+  <TextView
+      android:id="@+id/lbl_salario"
+      android:layout_width="@dimen/lbl_width"
+      android:layout_height="@dimen/lbl_height"
+      android:layout_marginTop="16dp"
+      android:text="Presupuesto"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/txt_fecha"
+      app:layout_constraintHorizontal_bias="0.016"
+      app:layout_constraintStart_toStartOf="@+id/txt_fecha"
+      app:layout_constraintTop_toBottomOf="@+id/txt_fecha" />
+
+  <TextView
+      android:id="@+id/lbl_chef_principal"
+      android:layout_width="165dp"
+      android:layout_height="26dp"
+      android:layout_marginTop="16dp"
+      android:text="Departamento Activo?"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/txt_salario"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txt_salario"
+      app:layout_constraintTop_toBottomOf="@+id/txt_salario" />
+
+  <TextView
+      android:id="@+id/lbl_fecha"
+      android:layout_width="@dimen/lbl_width"
+      android:layout_height="@dimen/lbl_height"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="12dp"
+      android:text="Fecha de creación"
+      android:textColor="@color/labels_creacion_cocinero"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/lbl_datos_contratacion"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_datos_contratacion" />
+
+  <EditText
+      android:id="@+id/txt_nombre"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="Ej: Finanzas"
+      android:inputType="text"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_nombre"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_nombre"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_nombre" />
+
+  <EditText
+      android:id="@+id/txt_apellido"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="Ej: Ala Norte"
+      android:inputType="text"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_apellido"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_apellido"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_apellido" />
+
+  <EditText
+      android:id="@+id/txt_edad"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="@string/hint_edad"
+      android:inputType="number"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_edad"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_edad"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_edad" />
+
+  <EditText
+      android:id="@+id/txt_fecha"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="@string/hint_fecha"
+      android:inputType="text"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_fecha"
+      app:layout_constraintHorizontal_bias="0.016"
+      app:layout_constraintStart_toStartOf="@+id/lbl_fecha"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_fecha" />
+
+  <EditText
+      android:id="@+id/txt_salario"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="@string/hint_salario"
+      android:inputType="numberDecimal"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_salario"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_salario"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_salario" />
+
+  <Spinner
+      android:id="@+id/sp_chef_principal"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:foregroundTint="#FFFFFF"
+      android:spinnerMode="dropdown"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_chef_principal"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_chef_principal"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_chef_principal" />
+
+  <EditText
+      android:id="@+id/txt_codigoUnico"
+      android:layout_width="@dimen/txt_width"
+      android:layout_height="@dimen/txt_height"
+      android:ems="10"
+      android:hint="@string/hint_codigoUnico"
+      android:inputType="text"
+      android:textColor="@color/texts_inputs_cocineros"
+      android:textColorHint="@color/texts_inputs_cocineros"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="@+id/lbl_codigo"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/lbl_codigo"
+      app:layout_constraintTop_toBottomOf="@+id/lbl_codigo" />
+
+  <Button
+      android:id="@+id/btn_guardar_chef"
+      android:layout_width="112dp"
+      android:layout_height="35dp"
+      android:layout_marginTop="24dp"
+      android:background="@color/texts_inputs_cocineros"
+      android:text="Guardar"
+      android:textColor="#FFFFFF"
+      app:layout_constraintEnd_toEndOf="@+id/sp_chef_principal"
+      app:layout_constraintStart_toStartOf="@+id/sp_chef_principal"
+      app:layout_constraintTop_toBottomOf="@+id/sp_chef_principal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

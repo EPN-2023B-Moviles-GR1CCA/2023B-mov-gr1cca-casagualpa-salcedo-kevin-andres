@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lv_width">625dp</dimen>
+    <dimen name="lv_height">230dp</dimen>
+</resources>

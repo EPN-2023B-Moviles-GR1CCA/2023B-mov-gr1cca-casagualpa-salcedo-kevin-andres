@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_constraint">#91D1D3</color>
+    <color name="titulo_lista_cocineros">#FFFFFF</color>
+    <color name="bg_titulo_cocineros">#0E696C</color>
+    <color name="color_btn_crear_cocinero">#FFFFFF</color>
+    <color name="bg_btn_crear_cocineros">#077785</color>
+    <color name="bg_creacion_cocinero">#195E63</color>
+    <color name="labels_creacion_cocinero">#009688</color>
+    <color name="texts_inputs_cocineros">#04146E</color>
+</resources>

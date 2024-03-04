@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_cocineros"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:text="Departamentos"
+        android:textAlignment="center"
+        android:textColor="@color/titulo_lista_cocineros"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/id_btn_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:text="@string/btn_crear_cocinero"
+        android:textColor="@color/color_btn_crear_cocinero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ListView
+        android:id="@+id/lv_list_cocineros"
+        android:layout_width="@dimen/lv_width"
+        android:layout_height="@dimen/lv_height"
+        android:layout_marginTop="28dp"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/id_btn_crear"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/id_btn_crear"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_crear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

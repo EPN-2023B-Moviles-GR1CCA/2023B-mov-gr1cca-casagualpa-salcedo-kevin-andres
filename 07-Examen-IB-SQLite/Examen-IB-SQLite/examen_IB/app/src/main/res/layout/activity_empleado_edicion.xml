@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_edicion_plato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Empleado_edicion">
+
+    <TextView
+        android:id="@+id/txt_bienvenido"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:paddingTop="10sp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/titulo_lista_cocineros"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_orden"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:textAlignment="center"
+        android:textColor="@color/titulo_lista_cocineros"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_bienvenido"
+        app:layout_constraintStart_toStartOf="@+id/txt_bienvenido"
+        app:layout_constraintTop_toBottomOf="@+id/txt_bienvenido" />
+
+    <TextView
+        android:id="@+id/tv_identificador"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="52dp"
+        android:paddingTop="5sp"
+        android:text="Codigo"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_orden" />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:paddingTop="5sp"
+        android:text="Nombre"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_identificador"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="@+id/tv_identificador"
+        app:layout_constraintTop_toBottomOf="@+id/tv_identificador" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:paddingTop="5sp"
+        android:text="Fecha de contratacion"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+
+    <TextView
+        android:id="@+id/tv_plato_dia"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:paddingTop="5sp"
+        android:text="¿Pertenece a algun Departamento?"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_fecha"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha" />
+
+    <TextView
+        android:id="@+id/tv_tipo_cocina"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:paddingTop="5sp"
+        android:text="Nacionalidad"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_plato_dia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_plato_dia"
+        app:layout_constraintTop_toBottomOf="@+id/tv_plato_dia" />
+
+    <TextView
+        android:id="@+id/tv_precio"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:paddingTop="5sp"
+        android:text="Salario"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cantidad_productos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cantidad_productos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cantidad_productos" />
+
+    <TextView
+        android:id="@+id/tv_cantidad_productos"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:paddingTop="5sp"
+        android:text="Precio por hora extra"
+        android:textColor="@color/labels_creacion_cocinero"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tipo_cocina"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tipo_cocina"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipo_cocina" />
+
+    <EditText
+        android:id="@+id/et_identificador"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Identificador del empleado"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_identificador"
+        app:layout_constraintStart_toEndOf="@+id/tv_identificador"
+        app:layout_constraintTop_toTopOf="@+id/tv_identificador"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="Nombre del empleado"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nombre"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombre"
+        app:layout_constraintTop_toTopOf="@+id/tv_nombre"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_fecha"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="yyyy-MM-dd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fecha"
+        app:layout_constraintStart_toEndOf="@+id/tv_fecha"
+        app:layout_constraintTop_toTopOf="@+id/tv_fecha"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/sp_plato_dia"
+        android:layout_width="187dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_plato_dia"
+        app:layout_constraintStart_toEndOf="@+id/tv_plato_dia"
+        app:layout_constraintTop_toTopOf="@+id/tv_plato_dia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/sp_tipo_cocina"
+        android:layout_width="187dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tipo_cocina"
+        app:layout_constraintStart_toEndOf="@+id/tv_tipo_cocina"
+        app:layout_constraintTop_toTopOf="@+id/tv_tipo_cocina"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_cantidad_productos"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="Ej. 5"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cantidad_productos"
+        app:layout_constraintStart_toEndOf="@+id/tv_cantidad_productos"
+        app:layout_constraintTop_toTopOf="@+id/tv_cantidad_productos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="Ej. 2500"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_precio"
+        app:layout_constraintStart_toEndOf="@+id/tv_precio"
+        app:layout_constraintTop_toTopOf="@+id/tv_precio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_crear_plato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@color/texts_inputs_cocineros"
+        android:text="CREAR"
+        android:textAlignment="center"
+        android:textColor="@color/color_btn_crear_cocinero"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_precio"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/tv_precio"
+        app:layout_constraintTop_toBottomOf="@+id/tv_precio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
