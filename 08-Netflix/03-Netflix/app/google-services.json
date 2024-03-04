@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204523353739",
+    "project_id": "prueba1d3",
+    "storage_bucket": "prueba1d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204523353739:android:ea66c5dc2fff2cddcd468e",
+        "android_client_info": {
+          "package_name": "com.fraporitmostech.kotflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204523353739-b4o0o1f13hlf89npak41ro6kmlq4stu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9UsZuYy7ZOiRd3ZRHgT-HUGETl3o7Ksk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204523353739-b4o0o1f13hlf89npak41ro6kmlq4stu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
